@@ -28,7 +28,7 @@ pipeline {
             }
         }
 
-        stage('prepare environment') {
+        stage('prepare environment and execute the module') {
             steps {
                 script {
                     echo "Perform project execution run environment"
@@ -58,9 +58,14 @@ pipeline {
             }
         }
 
-        stage('execute modules') {
+        stage('Move the result file to a different space location') {
             steps {
-                echo "Execute project artifacts"
+                dir(workspace) {
+                    echo "Execute project artifacts"
+                    bat '''
+                        copy "PublishResults\\diskSpaceInfo.json" /A "C:\\Users\\manoj\\Downloads\\Python Study\\Coding Challenges\\Interview Problem Statement\\System_Programming_getStorageDetails\\CaptureResults\\diskSpaceInfo.json" /A /Y
+                    '''
+                }
             }
         }
 
