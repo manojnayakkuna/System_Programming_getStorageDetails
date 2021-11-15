@@ -33,7 +33,6 @@ pipeline {
                         pwd
                         dir
                     '''
-                    }
                 }
             }
         }
