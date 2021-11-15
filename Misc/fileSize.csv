@@ -1,0 +1,39 @@
+ Volume in drive C is OS
+ Volume Serial Number is E4F2-4CAD
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails
+
+11/12/2021  07:41 PM             2,762 FILES.csv
+11/12/2021  07:50 PM                 0 fileSize.csv
+11/12/2021  07:46 PM             1,887 fileSize.txt
+11/12/2021  07:34 PM                87 folderSizes.csv
+11/12/2021  07:25 PM               361 getFilePathSpaceInfo.bat
+11/12/2021  07:31 PM             1,403 getFilePathSpaceInfoNew.bat
+11/12/2021  06:50 PM             1,502 GetStorage.py
+11/12/2021  06:31 PM             1,300 test_Validator.py
+11/12/2021  06:50 PM               525 Validator.py
+               9 File(s)          9,827 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.pytest_cache
+
+11/12/2021  01:38 AM                37 .gitignore
+11/12/2021  01:38 AM               194 CACHEDIR.TAG
+11/12/2021  01:38 AM               303 README.md
+               3 File(s)            534 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.pytest_cache\v\cache
+
+11/12/2021  06:31 PM                 2 lastfailed
+11/12/2021  06:31 PM               399 nodeids
+11/12/2021  06:31 PM                 2 stepwise
+               3 File(s)            403 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\__pycache__
+
+11/12/2021  06:31 PM             5,375 test_Validator.cpython-37-PYTEST.pyc
+11/12/2021  06:17 PM               946 Validator.cpython-37.pyc
+               2 File(s)          6,321 bytes
+
+     Total Files Listed:
+              17 File(s)         17,085 bytes
+               0 Dir(s)  124,824,227,840 bytes free

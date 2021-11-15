@@ -1,0 +1,57 @@
+ Volume in drive C is OS
+ Volume Serial Number is E4F2-4CAD
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails
+
+11/14/2021  07:14 PM             9,087 GetStorage.py
+11/13/2021  08:46 PM            54,848 Test Run Screenprints.docx
+11/12/2021  06:31 PM             1,300 test_Validator.py
+11/13/2021  08:51 PM               579 Validator.py
+11/13/2021  08:46 PM               162 ~$st Run Screenprints.docx
+               5 File(s)         65,976 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.pytest_cache
+
+11/12/2021  01:38 AM                37 .gitignore
+11/12/2021  01:38 AM               194 CACHEDIR.TAG
+11/12/2021  01:38 AM               303 README.md
+               3 File(s)            534 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.pytest_cache\v\cache
+
+11/12/2021  06:31 PM                 2 lastfailed
+11/13/2021  08:44 PM               399 nodeids
+11/13/2021  08:44 PM                 2 stepwise
+               3 File(s)            403 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\Misc
+
+11/12/2021  07:41 PM             2,762 FILES.csv
+11/12/2021  07:50 PM             1,940 fileSize.csv
+11/12/2021  07:46 PM             1,887 fileSize.txt
+11/12/2021  07:34 PM                87 folderSizes.csv
+11/12/2021  07:25 PM               361 getFilePathSpaceInfo.bat
+11/12/2021  07:31 PM             1,403 getFilePathSpaceInfoNew.bat
+11/14/2021  06:57 PM               522 MiscCode.py
+               7 File(s)          8,962 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\Scripts
+
+11/12/2021  10:49 PM                27 folderPathFileSizeInfo.bash
+11/13/2021  11:43 PM               391 folderPathFileSizeInfo.bat
+               2 File(s)            418 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\TempStorage
+
+11/14/2021  07:14 PM                 0 rawFileOutput.txt
+               1 File(s)              0 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\__pycache__
+
+11/12/2021  06:31 PM             5,375 test_Validator.cpython-37-PYTEST.pyc
+11/13/2021  08:51 PM               985 Validator.cpython-37.pyc
+               2 File(s)          6,360 bytes
+
+     Total Files Listed:
+              23 File(s)         82,653 bytes
+               0 Dir(s)  130,513,330,176 bytes free

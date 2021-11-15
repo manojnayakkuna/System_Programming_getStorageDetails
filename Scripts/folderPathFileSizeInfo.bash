@@ -1,0 +1,1 @@
+du -Rat > rawFileOutput.txt
