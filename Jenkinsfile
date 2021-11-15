@@ -25,14 +25,20 @@ pipeline {
                     def workspace = env.WORKSPACE
                     echo "current workspace : ${workspace}"
                     echo "conda install path: ${condaInstallPath}"
-                    bat '''
-                        cd %condaInstallPath%
-                        dir
-                        conda env list
-                        conda activate base
-                        cd %workspace%
-                        dir
-                    '''
+
+                    dir(condaInstallPath) {
+                        bat '''
+                            dir
+                            conda env list
+                            conda activate base
+                        '''
+                    }
+
+                    dir(workspace) {
+                        bat '''
+                            dir
+                        '''
+                    }
                 }
             }
         }
