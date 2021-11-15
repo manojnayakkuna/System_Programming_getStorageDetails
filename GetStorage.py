@@ -7,6 +7,7 @@ Created on Fri Nov 12 00:31:23 2021
 import subprocess
 from collections import defaultdict
 from Validator import Validator
+from ParameterFile import ParameterFile
 import pathlib
 import json
 import sys
@@ -196,14 +197,15 @@ class GetStorage:
         '''
         pass
 
-osProxy = sys.argv[1]
-scriptName = sys.argv[2]
-fileFormat = sys.argv[3]
-publishType = sys.argv[4]
-newPath = r'C:\{}'.format(sys.argv[5])
-
-#Initialize All Class Variables
+#Initialize Validator Class
 validator = Validator()
+
+#Initialize ParameterFile Class
+parameterFile = ParameterFile(sys.argv[1])
+osProxy, scriptName, fileFormat, publishType, path = parameterFile.readParameterFile()
+newPath = r'C:\{}'.format(path)
+
+#Initialize GetStorage Class
 getStorage = GetStorage(newPath, osProxy, scriptName, fileFormat, publishType, validator)
 
 #Validate All Parameters

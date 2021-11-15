@@ -1,10 +1,5 @@
 String condaInstallPath = "C:\\Users\\manoj\\Anaconda3\\condabin";
 String pythonInstallPath = "C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32";
-String osProxy = "Windows";
-String scriptName = "folderPathFileSizeInfo.bat";
-String fileFormat = "json";
-String publishType = "disk";
-String path = "Users\\manoj\\Downloads\\Python Study\\Coding Challenges\\Interview Problem Statement\\System_Programming_getStorageDetails"
 
 pipeline {
 
