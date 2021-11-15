@@ -63,7 +63,7 @@ pipeline {
                 dir(workspace) {
                     echo "Execute project artifacts"
                     bat '''
-                        copy "PublishResults\\diskSpaceInfo.json" /A "C:\\Users\\manoj\\Downloads\\Python Study\\Coding Challenges\\Interview Problem Statement\\System_Programming_getStorageDetails\\CaptureResults\\diskSpaceInfo.json" /A /Y
+                        copy "PublishResults\\diskSpaceInfo.json" /A "C:\\Users\\manoj\\Downloads\\Python Study\\Coding Challenges\\Interview Problem Statement\\System_Programming_getStorageDetails\\CaptureResults\\Windows\\diskSpaceInfo.json" /A /Y
                     '''
                 }
             }
