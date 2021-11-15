@@ -4,22 +4,24 @@
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails
 
 11/14/2021  09:39 PM            37,708 .editorconfig
-11/15/2021  01:11 AM             9,001 GetStorage.py
-11/15/2021  01:06 AM             2,163 Jenkinsfile
+11/15/2021  02:01 AM             9,190 GetStorage.py
+11/15/2021  01:52 AM             1,892 Jenkinsfile
+11/15/2021  01:26 AM               279 parameter.json
+11/15/2021  02:05 AM               939 ParameterFile.py
 11/12/2021  06:31 PM             1,300 test_Validator.py
-11/13/2021  08:51 PM               579 Validator.py
-               5 File(s)         50,751 bytes
+11/15/2021  01:45 AM               653 Validator.py
+               7 File(s)         51,961 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git
 
-11/15/2021  01:06 AM                24 COMMIT_EDITMSG
+11/15/2021  01:55 AM                24 COMMIT_EDITMSG
 11/14/2021  09:21 PM               337 config
 11/14/2021  09:10 PM                73 description
 11/14/2021  09:24 PM               132 FETCH_HEAD
 11/14/2021  09:10 PM                23 HEAD
-11/15/2021  01:06 AM             2,792 index
+11/15/2021  01:55 AM             2,952 index
 11/14/2021  09:24 PM                41 ORIG_HEAD
-               7 File(s)          3,422 bytes
+               7 File(s)          3,582 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\hooks
 
@@ -43,18 +45,29 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\logs
 
-11/15/2021  01:06 AM             2,832 HEAD
-               1 File(s)          2,832 bytes
+11/15/2021  01:55 AM             4,602 HEAD
+               1 File(s)          4,602 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\logs\refs\heads
 
-11/15/2021  01:06 AM             2,832 master
-               1 File(s)          2,832 bytes
+11/15/2021  01:55 AM             4,602 master
+               1 File(s)          4,602 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\logs\refs\remotes\origin
 
-11/15/2021  01:06 AM             2,564 master
-               1 File(s)          2,564 bytes
+11/15/2021  01:55 AM             4,164 master
+               1 File(s)          4,164 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\02
+
+11/15/2021  01:55 AM               177 c316489dec40c77e10db02eee8884f91104c7c
+               1 File(s)            177 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\04
+
+11/15/2021  01:45 AM               498 327a14cd3040d19e1f3f42dbb85ab34a96e325
+11/15/2021  01:12 AM               429 63059e5197e6adc96aaeac93bc2edaa2eab96e
+               2 File(s)            927 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\05
 
@@ -76,6 +89,11 @@
 
 11/14/2021  09:59 PM               207 cdc740ab70d27b0f08d5059db2e7c8fefd8066
                1 File(s)            207 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\10
+
+11/15/2021  01:45 AM               291 2cbe9b0ccb8b3021d4f78c98ef86a249b7ea5a
+               1 File(s)            291 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\13
 
@@ -101,6 +119,22 @@
 
 11/14/2021  11:50 PM             3,641 dbf6a24c7ede6fded5ec8c20da028cf5254cf4
                1 File(s)          3,641 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\1b
+
+11/15/2021  01:42 AM             2,655 36882076809c1c99d10d80593c5b2b83d1804e
+               1 File(s)          2,655 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\1e
+
+11/15/2021  01:42 AM               294 b027a96cd243ef6a5f44dc2526615f8615fef2
+               1 File(s)            294 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\1f
+
+11/15/2021  01:44 AM               633 6493c46fc772f37d1b5267794488b46f83a69d
+11/15/2021  01:52 AM               179 92ad8c3b9dba0245783df5f752181aa5e7c354
+               2 File(s)            812 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\21
 
@@ -128,6 +162,11 @@
 11/14/2021  09:59 PM               140 eb1ddfbbc029bcab630581847471d7f238ec53
                2 File(s)            320 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\37
+
+11/15/2021  01:12 AM             5,523 ad46816eec140d85c2c9f0feb2d671131eb1bf
+               1 File(s)          5,523 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\38
 
 11/14/2021  09:59 PM                96 54381bc013cb19911bbf539a6c4fa8814be7ae
@@ -135,8 +174,9 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\41
 
+11/15/2021  01:17 AM             2,636 12dc0f53a8cc4a22f68d5639cb7789dfffdab9
 11/14/2021  09:59 PM               429 1ce6346ee176c4fe6f1b7771fe77d8721c6258
-               1 File(s)            429 bytes
+               2 File(s)          3,065 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\45
 
@@ -158,6 +198,11 @@
 11/14/2021  10:40 PM               251 d3962f97759e9951c204a8063c39a28eef7e0e
                1 File(s)            251 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\4f
+
+11/15/2021  01:49 AM               498 361af849743a38b402fc426c08430dbfecd6a8
+               1 File(s)            498 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\52
 
 11/14/2021  09:23 PM               366 6cfd2d91e652c2263b7bddc2443c4a3dacd0a0
@@ -177,7 +222,8 @@
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\57
 
 11/14/2021  11:23 PM               179 14e95c5e0614c6238d36320ebcd25ea101b83f
-               1 File(s)            179 bytes
+11/15/2021  01:14 AM               429 a6915b0a2c01cf75529f6e1076a67d3b818dc4
+               2 File(s)            608 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\58
 
@@ -193,6 +239,18 @@
 
 11/14/2021  11:14 PM               368 254aa18fa2900e373d47dc6c776b014d1e6e13
                1 File(s)            368 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\5f
+
+11/15/2021  01:17 AM               428 675fad924c8939055678a6d6f05fe6df4fe313
+11/15/2021  01:12 AM               179 c65c06a6695a34b7ff68179380bfb2c27d4810
+11/15/2021  01:12 AM                62 d660669e5aeceb97fbc0ea913cf44c2ac7590f
+               3 File(s)            669 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\61
+
+11/15/2021  01:42 AM               297 2db13ab4e6de407160a47c0ca4ddd935689953
+               1 File(s)            297 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\63
 
@@ -210,6 +268,11 @@
 11/14/2021  11:25 PM               432 66ac92319b09fbc6e4e370bd7aec2207511e40
                2 File(s)            494 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\6b
+
+11/15/2021  01:52 AM               499 bc4e39d685664d34f7ac12e1e08c20d05e5616
+               1 File(s)            499 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\6e
 
 11/14/2021  09:59 PM             7,618 7468ee54ce11ae5123afccc5d65f4d3ec14b64
@@ -219,6 +282,11 @@
 
 11/14/2021  09:59 PM               260 69f4e796828d6330acdc5fc9a42ae24d54603b
                1 File(s)            260 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\71
+
+11/15/2021  01:52 AM               632 bc48cfe10986af3ff47195d1934b923e10fdd6
+               1 File(s)            632 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\72
 
@@ -230,6 +298,16 @@
 11/14/2021  09:59 PM               236 e18953e7ec024ae70ab26b9c95c3cdf298173e
                1 File(s)            236 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\75
+
+11/15/2021  01:49 AM             2,664 148b0d4dfc445cafc3ff76ce4ebab7c97e7bc8
+               1 File(s)          2,664 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\77
+
+11/15/2021  01:12 AM             4,240 317bc4fce7d773e104631171be7c40f767d4e3
+               1 File(s)          4,240 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\78
 
 11/14/2021  09:21 PM                98 343e108455d21cead2d7950b5c428d960fe33b
@@ -240,6 +318,11 @@
 
 11/14/2021  09:20 PM             1,640 9f675eb4033bd3e3b4202833d3570aa36935de
                1 File(s)          1,640 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\7c
+
+11/15/2021  01:17 AM               180 e85997e6f0d3a9be905cf5724c58a17b5a7158
+               1 File(s)            180 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\7e
 
@@ -261,6 +344,11 @@
 11/14/2021  11:14 PM               428 c583edd9650cc2578009fdced907079b5fc8c0
                1 File(s)            428 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\88
+
+11/15/2021  01:14 AM               181 d530342f2b29d41ba8aad3fdb275f672847035
+               1 File(s)            181 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\8b
 
 11/14/2021  11:34 PM               457 d325e7119f044a8c1165bfcdadd3e25ebf5a80
@@ -271,10 +359,32 @@
 11/14/2021  09:59 PM               181 cfbae5398f1934a895c13ac6c10e4917f2d8e4
                1 File(s)            181 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\8e
+
+11/15/2021  01:44 AM               177 0a02e2aa8842e0685e19661786e34111a3c809
+               1 File(s)            177 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\8f
+
+11/15/2021  01:49 AM               178 30b6e46bf4da425015ab33c0ce5d81542c60fe
+11/15/2021  01:47 AM               498 b8a73864a514f2a84cdb33e38780fe37239145
+               2 File(s)            676 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\90
 
+11/15/2021  01:14 AM             2,641 70f7ed186edb7e21d1c01d5913bc09a1a470e0
 11/14/2021  11:12 PM               428 8c650080625862d205adcb5b422f5db203d9d9
-               1 File(s)            428 bytes
+               2 File(s)          3,069 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\92
+
+11/15/2021  01:12 AM             2,634 564f70ce710df7d37cff5ceeb8c34c2b416116
+               1 File(s)          2,634 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\93
+
+11/15/2021  01:42 AM             1,036 3e4fc7638e4c396eae61cb9cf632d367fb1beb
+               1 File(s)          1,036 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\94
 
@@ -301,7 +411,8 @@
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\9d
 
 11/14/2021  09:59 PM               600 119f28d0a0fe47d16136cb964f4977a4c08ddf
-               1 File(s)            600 bytes
+11/15/2021  01:44 AM               497 376d66078255c3b5caa2619e3e82f27a36084b
+               2 File(s)          1,097 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\a4
 
@@ -341,8 +452,9 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\b3
 
+11/15/2021  01:42 AM               498 8db86022dc1f3a8a280bf44f9874230f5d95d9
 11/14/2021  09:20 PM               230 90bb257d3718a4ea572569be72e6d3a99dbd53
-               1 File(s)            230 bytes
+               2 File(s)            728 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\b8
 
@@ -353,6 +465,11 @@
 
 11/15/2021  01:06 AM             5,190 1ddcc0676a44e72868a230b85e3aa7b236fa2f
                1 File(s)          5,190 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\bd
+
+11/15/2021  01:42 AM               181 d56f025945c562ebd0599351f450c9e5566a5c
+               1 File(s)            181 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\c0
 
@@ -369,6 +486,11 @@
 11/14/2021  09:59 PM               930 bb53809308f647bf5ec461e628d465e98482c0
                1 File(s)            930 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\c5
+
+11/15/2021  01:45 AM               178 9735bf2cacb2772a84ce58d2059edf3b692c75
+               1 File(s)            178 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\c7
 
 11/15/2021  01:06 AM                63 2b1ec9d6e93ad484ed0cf041669ea57f9b72fd
@@ -381,8 +503,9 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\cd
 
+11/15/2021  01:42 AM               644 51906fc595f7bb5061a918b85138a2fcd88f02
 11/15/2021  12:05 AM               181 db5d21c2dd64c5049431c18ba795343f6c9743
-               1 File(s)            181 bytes
+               2 File(s)            825 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\ce
 
@@ -398,6 +521,11 @@
 
 11/14/2021  11:50 PM                63 08b47851d0ba76b48b4aed014cada22317d934
                1 File(s)             63 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\d4
+
+11/15/2021  01:55 AM               499 62afdd489bc9cc9087a1cd4ffdfe74b50b7430
+               1 File(s)            499 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\d5
 
@@ -420,6 +548,11 @@
 11/14/2021  10:41 PM               428 5bed863fa026e239f184be75ef3b27868643e1
                1 File(s)            428 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\de
+
+11/15/2021  01:12 AM                63 2a4c04b16a7f72efbd8f1794d480857d697f86
+               1 File(s)             63 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\e0
 
 11/14/2021  11:50 PM             4,755 d0a462cf0ef449f5f1eaea041082705c99da3d
@@ -434,6 +567,11 @@
 
 11/14/2021  09:59 PM            39,548 a06c280c3f1b7a58f79bc30fa608bd26ddc87b
                1 File(s)         39,548 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\ec
+
+11/15/2021  01:42 AM               245 7bf48fef4bb8441a8bf47470510324de5eddb3
+               1 File(s)            245 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\ee
 
@@ -450,11 +588,21 @@
 11/15/2021  01:06 AM             3,976 9fb56398aff04e7b89ac3dee0f173259907de5
                1 File(s)          3,976 bytes
 
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\f4
+
+11/15/2021  01:47 AM               299 74796a3af87ae7ae1af92d1ba19e1d3432eebf
+               1 File(s)            299 bytes
+
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\f5
 
 11/14/2021  11:34 PM               180 0ec57806d95086a29643285d197a50dbe9ca23
 11/14/2021  11:28 PM               428 aea6cf4a13bcf26b06c1dd67a3b924f1b4d9fd
                2 File(s)            608 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\f7
+
+11/15/2021  01:42 AM               214 435221e54b03c613c505f22be1e15639d4aaf0
+               1 File(s)            214 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\f8
 
@@ -463,8 +611,14 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\f9
 
+11/15/2021  01:55 AM             2,674 5a24c905d47e9e12edb04a53722eca42458f02
 11/14/2021  09:21 PM                63 aaa6bd98d5a1f1b3c47dc3d943a3f3febe313b
-               1 File(s)             63 bytes
+               2 File(s)          2,737 bytes
+
+ Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\fa
+
+11/15/2021  01:47 AM               181 2e8a3f164306148ddf3aa05d4d4cbd45c5444b
+               1 File(s)            181 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\objects\fb
 
@@ -474,12 +628,12 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\refs\heads
 
-11/15/2021  01:06 AM                41 master
+11/15/2021  01:55 AM                41 master
                1 File(s)             41 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.git\refs\remotes\origin
 
-11/15/2021  01:06 AM                41 master
+11/15/2021  01:55 AM                41 master
                1 File(s)             41 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.idea
@@ -488,8 +642,8 @@
 11/14/2021  09:38 PM               331 modules.xml
 11/14/2021  09:38 PM               344 System_Programming_getStorageDetails.iml
 11/14/2021  09:38 PM               172 vcs.xml
-11/14/2021  09:44 PM             2,471 workspace.xml
-               5 File(s)          3,579 bytes
+11/15/2021  01:32 AM             2,949 workspace.xml
+               5 File(s)          4,057 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\.idea\codeStyles
 
@@ -524,8 +678,8 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\PublishResults
 
-11/15/2021  01:05 AM            20,262 diskSpaceInfo.json
-               1 File(s)         20,262 bytes
+11/15/2021  01:11 AM            21,111 diskSpaceInfo.json
+               1 File(s)         21,111 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\Scripts
 
@@ -535,7 +689,7 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\TempStorage
 
-11/15/2021  01:11 AM                 0 rawFileOutput.txt
+11/15/2021  02:05 AM                 0 rawFileOutput.txt
                1 File(s)              0 bytes
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\UnitTestResults
@@ -545,10 +699,11 @@
 
  Directory of C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\__pycache__
 
+11/15/2021  02:05 AM             1,159 ParameterFile.cpython-37.pyc
 11/12/2021  06:31 PM             5,375 test_Validator.cpython-37-PYTEST.pyc
-11/13/2021  08:51 PM               985 Validator.cpython-37.pyc
-               2 File(s)          6,360 bytes
+11/15/2021  01:56 AM             1,032 Validator.cpython-37.pyc
+               3 File(s)          7,566 bytes
 
      Total Files Listed:
-             152 File(s)        288,522 bytes
-               0 Dir(s)  127,593,525,248 bytes free
+             195 File(s)        334,506 bytes
+               0 Dir(s)  126,230,798,336 bytes free

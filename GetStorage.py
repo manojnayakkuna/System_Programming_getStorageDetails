@@ -197,7 +197,7 @@ class GetStorage:
         '''
         pass
 
-parameterFile = sys.argv[0]
+parameterFile = sys.argv[1]
 print('parameterFile:', parameterFile)
 #Initialize ParameterFile Class
 parameterFile = ParameterFile(parameterFile)

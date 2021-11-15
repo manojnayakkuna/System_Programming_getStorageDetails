@@ -12,12 +12,14 @@ class ParameterFile:
         self.parameterFileName = parameterFileName
 
     def readParameterFile(self):
-        with open(self.parameterFileName) as json_file:
-            data = json.load(json_file)
-        osProxy = data['osProxy']
-        scriptName = data['scriptName']
-        fileFormat = data['fileFormat']
-        publishType = data['publishType']
-        path = data['path']
+        print('self.parameterFileName:', self.parameterFileName)
+        with open(self.parameterFileName) as json_data:
+            data_dict = json.load(json_data)
+            
+        osProxy = data_dict["osProxy"]
+        scriptName = data_dict["scriptName"]
+        fileFormat = data_dict["fileFormat"]
+        publishType = data_dict["publishType"]
+        path = data_dict["path"]
 
         return osProxy, scriptName, fileFormat, publishType, path
