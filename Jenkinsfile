@@ -1,6 +1,6 @@
 String condaInstallPath = "C:\\Users\\manoj\\Anaconda3\\condabin";
 String pythonInstallPath = "C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32";
-String parameterFileName = "parameter.json"
+String parameterFileName = "parameter.json";
 
 pipeline {
 
