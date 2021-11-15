@@ -20,4 +20,4 @@ class ParameterFile:
         publishType = data['publishType']
         path = data['path']
 
-        return osProxy scriptName fileFormat publishType path
+        return osProxy, scriptName, fileFormat, publishType, path
