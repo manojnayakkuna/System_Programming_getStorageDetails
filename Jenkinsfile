@@ -1,5 +1,6 @@
 String condaInstallPath = "C:\\Users\\manoj\\Anaconda3\\condabin";
 String pythonInstallPath = "C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32";
+String parameterFileName = "parameter.json"
 
 pipeline {
 
@@ -41,7 +42,7 @@ pipeline {
                         bat '''
                             dir
                             SET PATH=%PATH%;%PYTHON_PATH%
-                            python GetStorage.py %osProxy% %scriptName% %fileFormat% %publishType% %path%
+                            python GetStorage.py %parameterFileName%
                         '''
                         //bat(script:'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe GetStorage.py', returnStdout: true).tokenize().last
                     }
