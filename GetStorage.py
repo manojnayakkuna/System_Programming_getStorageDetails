@@ -11,8 +11,6 @@ from ParameterFile import ParameterFile
 import pathlib
 import json
 import sys
-#import pickle
-#import os
 
 class GetStorage:
 
