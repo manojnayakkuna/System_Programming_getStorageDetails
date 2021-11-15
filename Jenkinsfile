@@ -26,11 +26,10 @@ pipeline {
                     echo "current workspace: ${workspace}"
                     echo "conda install path: ${condaInstallPath}"
                     bat '''
-                        cd ${condaInstallPath}
+                        cd %condaInstallPath%
                         conda env list
                         conda activate base
-                        cd ${workspace}
-                        pwd
+                        cd %workspace%
                         dir
                     '''
                 }
