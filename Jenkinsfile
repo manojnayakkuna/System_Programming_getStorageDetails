@@ -22,6 +22,7 @@ pipeline {
                 script {
                     echo "Perform project execution run environment"
                     def condaInstallPath = "C:\\Users\\manoj\\Anaconda3\\condabin"
+                    def pythonInstallPath = "C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32"
                     def workspace = env.WORKSPACE
                     echo "current workspace : ${workspace}"
                     echo "conda install path: ${condaInstallPath}"
@@ -35,10 +36,7 @@ pipeline {
                     }
 
                     dir(workspace) {
-                        bat '''
-                            dir
-                            python GetStorage.py
-                        '''
+                        bat(script:'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe GetStorage.py', returnStdout: true).tokenize().last
                     }
                 }
             }
