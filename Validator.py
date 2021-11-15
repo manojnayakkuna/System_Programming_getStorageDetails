@@ -5,7 +5,7 @@ Created on Fri Nov 12 00:51:03 2021
 @author: manoj
 """
 
-class ParameterFile:
+class Validator:
         
     def validateNull(self, stringValue):
         if stringValue is None or stringValue == '' or len(stringValue.strip()) == 0:
