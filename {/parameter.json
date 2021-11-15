@@ -1,0 +1,7 @@
+{
+    "osProxy" : "Windows",
+    "scriptName" : "folderPathFileSizeInfo.bat",
+    "fileFormat" : "json",
+    "publishType" : "disk",
+    "path" : "Users\\manoj\\Downloads\\Python Study\\Coding Challenges\\Interview Problem Statement\\System_Programming_getStorageDetails"
+}

@@ -196,7 +196,7 @@ class GetStorage:
         pass
 
 #parameterFile = sys.argv[1]
-parameterFile = "parameter.json"
+parameterFile = "param.json"
 
 #Initialize ParameterFile Class
 parameterFile = ParameterFile(parameterFile)

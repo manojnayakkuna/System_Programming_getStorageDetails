@@ -1,0 +1,7 @@
+{
+    "osProxy" : "Unix",
+    "scriptName" : "folderPathFileSizeInfo.bash",
+    "fileFormat" : "json",
+    "publishType" : "disk",
+    "path" : ""
+}

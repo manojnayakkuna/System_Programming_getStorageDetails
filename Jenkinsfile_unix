@@ -1,0 +1,27 @@
+String parameterFileName = "parameter.json";
+
+pipeline {
+
+    agent none
+
+    stages {
+
+        /*
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }*/
+
+        stage('create python docker container using python alpine linux') {
+            agent {
+                docker {
+                    image 'python: 2-alpine'
+                }
+            }
+            steps {
+                sh 'python getStorage.py'
+            }
+        }
+    }
+}
