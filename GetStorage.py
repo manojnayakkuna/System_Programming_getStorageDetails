@@ -171,13 +171,10 @@ class GetStorage:
     def publishResults(self):
         if self.publishType.lower() == 'disk':
             self.transferFileToDisk()
-            break
         elif self.publishType.lower() == 'email':
             self.transferFileToEmail()
-            break
         elif self.publishType.lower() == 'transfer':
             self.transferFileToSharedServer()
-            break
         else:
             self.transferFileToDisk()
             
