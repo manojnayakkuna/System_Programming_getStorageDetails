@@ -19,4 +19,6 @@ class Validator:
         return True
         
     def validateGetValue(self, value, dataObject):
+        print('value:', value)
+        print('dataObject:', dataObject)
         return value in dataObject

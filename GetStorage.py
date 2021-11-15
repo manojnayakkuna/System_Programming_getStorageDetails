@@ -139,14 +139,14 @@ class GetStorage:
         '''
         currentPath = str(pathlib.Path(__file__).parent.resolve())
         PublishFilePath = currentPath + "\\PublishResults\\" + self.resultsFileName
-        if self.fileFormat.lower() == 'json':
+        if self.fileFormat.lower() == "json":
+            self.resultsFileName = PublishFilePath + ".json"
             self.transferResults = self.loadJsonFileFormat()
-            self.resultsFileName = PublishFilePath + '.json'
-        elif self.fileFormat.lower() == 'xml':
-            self.resultsFileName = PublishFilePath + '.xml'
+        elif self.fileFormat.lower() == "xml":
+            self.resultsFileName = PublishFilePath + ".xml"
             self.transferResults = self.loadXMLFileFormat()
         else:
-            self.resultsFileName = PublishFilePath + '.txt'
+            self.resultsFileName = PublishFilePath + ".txt"
             self.transferResults = self.loadTextFileFormat()
     
     def loadJsonFileFormat(self):
