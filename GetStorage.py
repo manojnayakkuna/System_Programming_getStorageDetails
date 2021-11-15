@@ -53,7 +53,6 @@ class GetStorage:
             #add to Logger details
             
         if not self.validator.validateGetValue(self.osProxy, self.osList):
-            print('self.osProxy:', self.osProxy)
             print('<<< osProxy parameter should be one of the value from: ', self.osList, '>>>')
             #add to Logger details
         
@@ -202,11 +201,6 @@ scriptName = sys.argv[2]
 fileFormat = sys.argv[3]
 publishType = sys.argv[4]
 newPath = r'C:\{}'.format(sys.argv[5])
-print('osProxy    :', osProxy)
-print('scriptName :', scriptName)
-print('fileFormat :', fileFormat)
-print('publishType:', publishType)
-print('path       :', newPath)
 
 #Initialize All Class Variables
 validator = Validator()
