@@ -5,19 +5,28 @@ pipeline {
     stages {
 
         stage('pipeline initialization') {
-            steps {}
+            steps {
+                echo "This is pipeline initialization step"
+                echo "We will be performing code check-out, prepare run environment and execute the project"
+            }
         }
 
         stage('code checkout') {
-            steps{}
+            steps{
+                echo "Perform code check-out"
+            }
         }
 
         stage('prepare environment') {
-            steps {}
+            steps {
+                echo "Perform project execution run environment"
+            }
         }
-        
+
         stage('execute modules') {
-            steps {}
+            steps {
+                echo "Execute project artifacts"
+            }
         }
 
     }
