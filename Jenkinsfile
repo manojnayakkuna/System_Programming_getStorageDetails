@@ -8,11 +8,12 @@ pipeline {
 
     stages {
 
+        /*
         stage('Clean Workspace') {
             steps {
-                //cleanWs()
+                cleanWs()
             }
-        }
+        }*/
 
         stage('pipeline initialization') {
             steps {
