@@ -42,7 +42,7 @@ pipeline {
                         bat '''
                             dir
                             SET PATH=%PATH%;%PYTHON_PATH%
-                            python GetStorage.py %parameterFileName%
+                            python GetStorage.py
                         '''
                         //bat(script:'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe GetStorage.py', returnStdout: true).tokenize().last
                     }

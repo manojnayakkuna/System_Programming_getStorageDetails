@@ -15,7 +15,7 @@ class ParameterFile:
         print('self.parameterFileName:', self.parameterFileName)
         with open(self.parameterFileName) as json_data:
             data_dict = json.load(json_data)
-            
+
         osProxy = data_dict["osProxy"]
         scriptName = data_dict["scriptName"]
         fileFormat = data_dict["fileFormat"]

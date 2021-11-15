@@ -197,8 +197,9 @@ class GetStorage:
         '''
         pass
 
-parameterFile = sys.argv[1]
-print('parameterFile:', parameterFile)
+#parameterFile = sys.argv[1]
+parameterFile = "parameter.json"
+
 #Initialize ParameterFile Class
 parameterFile = ParameterFile(parameterFile)
 osProxy, scriptName, fileFormat, publishType, path = parameterFile.readParameterFile()
