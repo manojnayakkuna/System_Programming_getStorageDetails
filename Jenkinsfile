@@ -8,6 +8,12 @@ pipeline {
 
     stages {
 
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+
         stage('pipeline initialization') {
             steps {
                 echo "This is pipeline initialization step"
