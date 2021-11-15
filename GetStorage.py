@@ -197,11 +197,12 @@ class GetStorage:
         '''
         pass
 
+parameterFile = sys.argv[1]
 #Initialize Validator Class
 validator = Validator()
 
 #Initialize ParameterFile Class
-parameterFile = ParameterFile(sys.argv[1])
+parameterFile = ParameterFile(parameterFile)
 osProxy, scriptName, fileFormat, publishType, path = parameterFile.readParameterFile()
 newPath = r'C:\{}'.format(path)
 
