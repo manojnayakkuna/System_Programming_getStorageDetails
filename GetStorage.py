@@ -197,32 +197,27 @@ class GetStorage:
         '''
         pass
 
-parameterFile = sys.argv[1]
-#Initialize Validator Class
-validator = Validator()
-
+parameterFile = sys.argv[0]
+print('parameterFile:', parameterFile)
 #Initialize ParameterFile Class
 parameterFile = ParameterFile(parameterFile)
 osProxy, scriptName, fileFormat, publishType, path = parameterFile.readParameterFile()
 newPath = r'C:\{}'.format(path)
 
+#Initialize Validator Class
+validator = Validator()
 #Initialize GetStorage Class
 getStorage = GetStorage(newPath, osProxy, scriptName, fileFormat, publishType, validator)
 
 #Validate All Parameters
 getStorage.validateParameters()
-
 #Get Storage Details
 getStorage.getStorageDetails()
-
 #Run Script Which Captures File Disk Space And Generates A Raw File
 getStorage.runScript()
-
 #Load & Extract The Script Raw File OutPut Into A Temporary Common Format
 getStorage.loadStorage()
-
 #Detect Output File Formatter
 getStorage.fileFormatter()
-
 #Load The Disk Space Storage Details Into Desired Format
 getStorage.publishResults()
