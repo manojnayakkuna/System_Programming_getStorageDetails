@@ -37,6 +37,7 @@ pipeline {
                     dir(workspace) {
                         bat '''
                             dir
+                            python GetStorage.py
                         '''
                     }
                 }
