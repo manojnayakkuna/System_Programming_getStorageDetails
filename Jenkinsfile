@@ -21,13 +21,18 @@ pipeline {
             steps {
                 script {
                     echo "Perform project execution run environment"
+                    def condaInstallPath = "C:\\Users\\manoj\\Anaconda3"
                     def workspace = env.WORKSPACE
                     echo "current workspace: ${workspace}"
-                    dir(workspace) {
-                        bat '''
-                            conda env list
-                            conda activate base
-                        '''
+                    echo "conda install path: ${condaInstallPath}"
+                    bat '''
+                        cd ${condaInstallPath}
+                        conda env list
+                        conda activate base
+                        cd ${workspace}
+                        pwd
+                        dir
+                    '''
                     }
                 }
             }
