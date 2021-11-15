@@ -34,8 +34,8 @@ class GetStorage:
         self.fileFormat = fileFormat
         self.publishType = publishType
         self.validator = validator
-        self.osList = ['Linux', 'Windows']
-        self.fileFormatList = ['json', 'xml']
+        self.osList = ["Linux", "Windows"]
+        self.fileFormatList = ["json", "xml", "txt"]
         self.commonFrameworkResults = defaultdict(list)
         self.rawFilePath = ''
         self.resultsFileName = 'diskSpaceInfo'
