@@ -19,14 +19,16 @@ pipeline {
 
         stage('prepare environment') {
             steps {
-                echo "Perform project execution run environment"
-                def workspace = env.WORKSPACE
-                echo "current workspace: ${workspace}"
-                dir(workspace) {
-                    bat '''
-                        conda env list
-                        conda activate base
-                    '''
+                script {
+                    echo "Perform project execution run environment"
+                    def workspace = env.WORKSPACE
+                    echo "current workspace: ${workspace}"
+                    dir(workspace) {
+                        bat '''
+                            conda env list
+                            conda activate base
+                        '''
+                    }
                 }
             }
         }
