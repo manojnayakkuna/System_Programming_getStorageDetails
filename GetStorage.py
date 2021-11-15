@@ -9,6 +9,7 @@ from collections import defaultdict
 from Validator import Validator
 import pathlib
 import json
+import sys
 #import pickle
 #import os
 
@@ -52,7 +53,8 @@ class GetStorage:
             #add to Logger details
             
         if not self.validator.validateGetValue(self.osProxy, self.osList):
-            print('<<< osProxy parameter should be one of the value from: ' + self.osList + '>>>')
+            print('self.osProxy:', self.osProxy)
+            print('<<< osProxy parameter should be one of the value from: ', self.osList, '>>>')
             #add to Logger details
         
         if not self.validator.validateNull(self.scriptName):
@@ -68,7 +70,7 @@ class GetStorage:
             #add to Logger details
             
         if not self.validator.validateGetValue(self.fileFormat, self.fileFormatList):
-            print('<<< fileFormat should be one of the value from: ' + self.fileFormatList + '>>>')
+            print('<<< fileFormat should be one of the value from: ', self.fileFormatList, '>>>')
             #add to Logger details
         
     def getStorageDetails(self):
@@ -195,15 +197,20 @@ class GetStorage:
         '''
         pass
 
-path = r"C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails"
-osProxy = 'Windows'
-scriptName = 'folderPathFileSizeInfo.bat'
-fileFormat = 'json'
-publishType = 'disk'
+osProxy = sys.argv[1]
+scriptName = sys.argv[2]
+fileFormat = sys.argv[3]
+publishType = sys.argv[4]
+newPath = r'C:\{}'.format(sys.argv[5])
+print('osProxy    :', osProxy)
+print('scriptName :', scriptName)
+print('fileFormat :', fileFormat)
+print('publishType:', publishType)
+print('path       :', newPath)
 
 #Initialize All Class Variables
 validator = Validator()
-getStorage = GetStorage(path, osProxy, scriptName, fileFormat, publishType, validator)
+getStorage = GetStorage(newPath, osProxy, scriptName, fileFormat, publishType, validator)
 
 #Validate All Parameters
 getStorage.validateParameters()
