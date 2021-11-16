@@ -31,12 +31,17 @@ pipeline {
                 dir(workspace) {
                     script {
                         withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin:/bin/sh']) {
-                            sh ('echo Perform project execution run environment')
-                            sh ('current workspace : $workspace')
-                            sh ('ls -lat')
-                            sh ('python3.8 --version')
-                            sh ('cat parameter.json > param.json')
-                            sh ('python3.8 GetStorage.py')
+                            // Permission to execute
+                            def workspace = env.WORKSPACE
+                            def jobName = env.JOB_NAME
+                            sh "chmod +x -R $workspace/../$jobName@script"
+                            sh "$workspace/../$jobName@script/script.sh"
+                            sh 'echo Perform project execution run environment'
+                            sh 'current workspace : $workspace'
+                            sh 'ls -lat'
+                            sh 'python3.8 --version'
+                            sh 'cat parameter.json > param.json'
+                            sh 'python3.8 GetStorage.py'
                         }
                     }
                 }
