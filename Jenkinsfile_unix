@@ -31,17 +31,12 @@ pipeline {
         stage('prepare environment and execute the module') {
             steps {
                 script {
-                    def workspace = env.WORKSPACE
-                    sh """
-                        echo 'Perform project execution run environment'
-                        current workspace : $workspace
-                        python3.8 --version
-                    """
-
                     dir(workspace) {
                         sh """
-                            pwd
+                            echo 'Perform project execution run environment'                            
+                            current workspace : $workspace
                             ls -lat
+                            python3.8 --version
                             cat parameter.json > param.json
                             python3.8 GetStorage.py
                         """
