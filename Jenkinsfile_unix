@@ -2,7 +2,7 @@ String parameterFileName = "parameter.json";
 
 pipeline {
 
-    agent none
+    agent any
 
     stages {
 
@@ -13,25 +13,50 @@ pipeline {
             }
         }*/
 
-        stage('create python docker container using python alpine linux') {
-            agent {
-                docker {
-                    image 'python:2-alpine'
-                }
+        stage('pipeline initialization') {
+            steps {
+                sh 'This is pipeline initialization step'
+                sh 'We will be performing code check-out, prepare run environment and execute the project'
             }
+        }
 
+        stage('code checkout') {
+            steps{
+                echo 'Perform code check-out"'
+            }
+        }
+
+        stage('prepare environment and execute the module') {
             steps {
                 script {
-                    sh '''
-                        pwd
-                        ls -lat
-                    '''
+                    def workspace = env.WORKSPACE
+                    sh """
+                        echo 'Perform project execution run environment'
+                        current workspace : $workspace
+                    """
+
+                    dir(workspace) {
+                        sh """
+                            pwd
+                            python3.8 --version
+                            cat parameter.json > param.json
+                            python3.8 GetStorage.py
+                        """
+                    }
                 }
             }
-            /*
-            steps {
-                sh 'python getStorage.py'
-            }*/
         }
+
+        stage('Move the result file to a different space location') {
+            steps {
+                dir(workspace) {
+                    echo "Execute project artifacts"
+                    sh """
+                        cp /PublishResults/diskSpaceInfo.json /tmp/misc/
+                    """
+                }
+            }
+        }
+
     }
 }
