@@ -8,12 +8,12 @@ import json
 
 class ParameterFile:
 
-    def __init__(self, parameterFileName):
-        self.parameterFileName = parameterFileName
+    def __init__(self, parameterFile):
+        self.parameterFile = parameterFile
 
     def readParameterFile(self):
-        print('self.parameterFileName:', self.parameterFileName)
-        with open(self.parameterFileName) as json_data:
+        print('self.parameterFileName:', self.parameterFile)
+        with open(self.parameterFile) as json_data:
             data_dict = json.load(json_data)
 
         osProxy = data_dict["osProxy"]

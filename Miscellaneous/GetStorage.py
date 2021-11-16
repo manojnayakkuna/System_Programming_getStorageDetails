@@ -8,57 +8,37 @@ import subprocess
 from collections import defaultdict
 from Validator import Validator
 from ParameterFile import ParameterFile
-from FileFormatter import FileFormatter
-from PublishResults import PublishResults
-from ExtractDetails import ExtractDetails
 import pathlib
+import json
+import sys
 
 class GetStorage:
 
-    '''
-    Initialize GetStorage variables
-    path          : specifies the path from where the disk space results will be generated
-    osProxy       : specifies the path is a Linux, Windows, MacOs, etc. OS
-    scriptName    : specifies the name of the script which will be run in target OS from python
-    fileFormat    : specifies what file format the disk space results will be formatted to like json, xml, etc.
-    publishType   : specifies how the results will be publised i.e. store in local disk, email, transfer to a shared path, etc.
-    '''
-    def __init__(self, path, osProxy, scriptName, fileFormat, publishType):
+    def __init__(self, path, osProxy, scriptName, fileFormat, publishType, validator):
+        '''
+        Initialize class variable parameters
+        path          : specifies the path from where the disk space results will be generated
+        osProxy       : specifies the path is a Linux, Windows, MacOs, etc. OS
+        scriptName    : specifies the name of the script which will be run in target OS from python
+        fileFormat    : specifies what file format the disk space results will be formatted to like json, xml, etc.
+        publishType   : specifies how the results will be publised i.e. store in local disk, email, transfer to a shared path, etc.
+        validator     : Object of class Validator used for all validation
+        osList        : All valid operating system this product will be utilized in to capture the results
+        fileFormatList: All valid file formatting this product will be utilized in to capture the results
+        rawFilePath   : Temporary storage path for manipulation, default is current directory 
+        '''
         self.path = path
         self.osProxy = osProxy
         self.scriptName = scriptName
         self.fileFormat = fileFormat
         self.publishType = publishType
-        self.initializeClassObjects()
-        self.initializeGlobalVariables()
-
-    '''
-    Initialize GetStorage -> Object variables
-    validator     : Object of class Validator used for all validation
-    fileFormatter : Object of class FileFormatter used for all valid file formatting
-    publishResults: Object of class PublishResults used for all valid publish results
-    extractDetails: Object of class ExtractDetails used for all valid extract details method
-    '''
-    def initializeClassObjects(self):
-        self.validator = Validator()
-        self.fileFormatter = FileFormatter()
-        self.publishResults = PublishResults()
-        self.extractDetails = ExtractDetails()
-
-    '''
-    osList         : All valid operating system this product will be utilized in to capture the results
-    fileFormatList : All valid file formatting this product will be utilized in to capture the results
-    rawFilePath    : Temporary storage path for manipulation, default is current directory 
-    resultsFileName: File name where the results will be captured before transmission
-    commonFrameworkResults: Common framework results used for intermediate storage  
-    '''
-    def initializeGlobalVariables(self):
+        self.validator = validator
         self.osList = ["Linux", "Windows"]
         self.fileFormatList = ["json", "xml", "txt"]
+        self.commonFrameworkResults = defaultdict(list)
         self.rawFilePath = ''
         self.resultsFileName = 'diskSpaceInfo'
-        self.commonFrameworkResults = defaultdict(list)
-
+        
     def validateParameters(self):
         '''
         Validate all the parameters set in __init__ class
@@ -93,7 +73,8 @@ class GetStorage:
         
     def getStorageDetails(self):
         '''
-        Trigger OS Specific script to extract file disk space in raw format under /TempStorage/rawFileOutput.txt
+        Trigger scriptName.bat or scriptName.bash using python library subprocess to extract file 
+        disk space in raw format under /TempStorage/rawFileOutput.txt
         '''        
         self.runScript()
             
@@ -120,12 +101,38 @@ class GetStorage:
         '''
         if self.osProxy == 'Linux':
             searchString = ''
-            self.commonFrameworkResults = self.extractDetails.extractDetailsLinux(searchString, self.rawFilePath)
+            self.extractDetailsLinux(searchString)
         elif self.osProxy == 'Windows':
             searchString = 'Directory of'
-            self.commonFrameworkResults = self.extractDetails.extractDetailsWindows(searchString, self.rawFilePath)
+            self.extractDetailsWindows(searchString)
     
-    def formatFile(self):
+    def extractDetailsWindows(self, searchString):
+        '''
+        Read raw output file 'rawFileOutput.txt' to load into a common temporary variable for Windows
+        '''
+        results = defaultdict(list)
+        with open(self.rawFilePath) as file:
+            tempKey = ''
+            for line in file:
+                if len(line.strip()) > 0:
+                    if searchString in line[1:14]:
+                        tempKey = line[14:].replace('\n','')
+                        results.get(tempKey, [])
+                    elif line[0] != ' ':
+                        record = [value for value in line.split(' ') if value != '']
+                        fileName = record[4].replace('\n','')
+                        fileSize = int(record[3].replace(',', ''))
+                        results[tempKey].append(dict({fileName: fileSize}))
+                        
+        self.commonFrameworkResults = results
+    
+    def extractDetailsLinux(self, rawFileName):
+        '''
+        Read raw output file 'rawFileOutput.txt' to load into a common temporary variable for Linux
+        '''
+        pass
+    
+    def fileFormatter(self):
         '''
         Format the common framework file into user specifed file format, if provided none default is .txt
         '''
@@ -133,35 +140,76 @@ class GetStorage:
         PublishFilePath = currentPath + "\\PublishResults\\" + self.resultsFileName
         if self.fileFormat.lower() == "json":
             self.resultsFileName = PublishFilePath + ".json"
-            self.transferResults = self.fileFormatter.loadJsonFileFormat(self.commonFrameworkResults)
+            self.transferResults = self.loadJsonFileFormat()
         elif self.fileFormat.lower() == "xml":
             self.resultsFileName = PublishFilePath + ".xml"
-            self.transferResults = self.fileFormatter.loadXMLFileFormat(self.commonFrameworkResults)
+            self.transferResults = self.loadXMLFileFormat()
         else:
             self.resultsFileName = PublishFilePath + ".txt"
-            self.transferResults = self.fileFormatter.loadTextFileFormat(self.commonFrameworkResults)
+            self.transferResults = self.loadTextFileFormat()
     
-    def resultsPublisher(self):
+    def loadJsonFileFormat(self):
+        '''
+        Format the common framework file into *.json file format
+        '''
+        return json.dumps(self.commonFrameworkResults)        
+        
+    def loadXMLFileFormat(self):
+        '''
+        Format the common framework file into *.xml file format
+        '''
+        pass
+    
+    def loadTextFileFormat(self):
+        '''
+        Format the common framework file into *.txt file format
+        '''
+        pass
+    
+    def publishResults(self):
         if self.publishType.lower() == 'disk':
-            self.publishResults.transferFileToDisk(self.resultsFileName, self.commonFrameworkResults)
+            self.transferFileToDisk()
         elif self.publishType.lower() == 'email':
-            self.publishResults.transferFileToEmail(self.resultsFileName, self.commonFrameworkResults)
+            self.transferFileToEmail()
         elif self.publishType.lower() == 'transfer':
-            self.publishResults.transferFileToSharedServer(self.resultsFileName, self.commonFrameworkResults)
+            self.transferFileToSharedServer()
         else:
-            self.publishResults.transferFileToDisk(self.resultsFileName, self.commonFrameworkResults)
+            self.transferFileToDisk()
+            
+    def transferFileToDisk(self):
+        '''
+        Send/Transfer the results to local disk
+        '''
+        with open(self.resultsFileName, 'w') as outfile:
+            json.dump(self.commonFrameworkResults, outfile)
+    
+    def transferFileToEmail(self):
+        '''
+        Send/Transfer the results to specified user email
+        '''
+        pass
+    
+    def transferFileToSharedServer(self):
+        '''
+        Send/Transfer the results to a shared server path
+        '''
+        pass
 
+#parameterFile = sys.argv[1]
 parameterFile = "param.json"
+
 #Initialize ParameterFile Class
 parameterFile = ParameterFile(parameterFile)
 osProxy, scriptName, fileFormat, publishType, path = parameterFile.readParameterFile()
 newPath = r'C:\{}'.format(path)
 
+#Initialize Validator Class
+validator = Validator()
 #Initialize GetStorage Class
-getStorage = GetStorage(newPath, osProxy, scriptName, fileFormat, publishType)
+getStorage = GetStorage(newPath, osProxy, scriptName, fileFormat, publishType, validator)
+
 #Validate All Parameters
 getStorage.validateParameters()
-
 #Get Storage Details
 getStorage.getStorageDetails()
 #Run Script Which Captures File Disk Space And Generates A Raw File
@@ -169,6 +217,6 @@ getStorage.runScript()
 #Load & Extract The Script Raw File OutPut Into A Temporary Common Format
 getStorage.loadStorage()
 #Detect Output File Formatter
-getStorage.formatFile()
+getStorage.fileFormatter()
 #Load The Disk Space Storage Details Into Desired Format
-getStorage.resultsPublisher()
+getStorage.publishResults()

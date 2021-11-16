@@ -6,6 +6,9 @@ Created on Fri Nov 12 00:51:03 2021
 """
 
 class Validator:
+
+    def __init__(self):
+        pass
         
     def validateNull(self, stringValue):
         if stringValue is None or stringValue == '' or len(stringValue.strip()) == 0:
