@@ -30,15 +30,15 @@ pipeline {
             steps {
                 dir(workspace) {
                     script {
-                        withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {
+                        withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin:/bin/sh']) {
                             sh """
-                            echo 'Perform project execution run environment'                            
-                            current workspace : $workspace
-                            ls -lat
-                            python3.8 --version
-                            cat parameter.json > param.json
-                            python3.8 GetStorage.py
-                        """
+                                echo 'Perform project execution run environment'                            
+                                current workspace : $workspace
+                                ls -lat
+                                python3.8 --version
+                                cat parameter.json > param.json
+                                python3.8 GetStorage.py
+                            """
                         }
                     }
                 }
