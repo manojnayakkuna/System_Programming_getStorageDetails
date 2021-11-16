@@ -28,14 +28,13 @@ pipeline {
 
         stage('prepare environment and execute the module') {
             steps {
-                dir(workspace) {
-                    script {
+                script {
+                    def workspace = env.WORKSPACE
+                    //def jobName = env.JOB_NAME
+                    dir(workspace) {
                         withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin:/bin/sh']) {
-                            // Permission to execute
-                            def workspace = env.WORKSPACE
-                            def jobName = env.JOB_NAME
-                            sh "chmod +x -R $workspace/../$jobName@script"
-                            sh "$workspace/../$jobName@script/script.sh"
+                            //sh "chmod +x -R $workspace/../$jobName@script"
+                            //sh "$workspace/../$jobName@script/script.sh"
                             sh 'echo Perform project execution run environment'
                             sh 'current workspace : $workspace'
                             sh 'ls -lat'
