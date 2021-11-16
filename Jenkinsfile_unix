@@ -4,7 +4,7 @@ pipeline {
 
     agent any
 
-    stages {
+    stages {This is pipeline initialization step
 
         /*
         stage('Clean Workspace') {
@@ -15,8 +15,10 @@ pipeline {
 
         stage('pipeline initialization') {
             steps {
-                sh 'This is pipeline initialization step'
-                sh 'We will be performing code check-out, prepare run environment and execute the project'
+                sh """
+                    echo 'This is pipeline initialization step'
+                    echo 'We will be performing code check-out, prepare run environment and execute the project'
+                """
             }
         }
 
