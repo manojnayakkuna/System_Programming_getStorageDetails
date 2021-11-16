@@ -29,14 +29,16 @@ pipeline {
         stage('prepare environment and execute the module') {
             steps {
                 dir(workspace) {
-                    sh """
-                        echo 'Perform project execution run environment'                            
-                        current workspace : $workspace
-                        ls -lat
-                        python3.8 --version
-                        cat parameter.json > param.json
-                        python3.8 GetStorage.py
-                    """
+                    withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {
+                        sh """
+                            echo 'Perform project execution run environment'                            
+                            current workspace : $workspace
+                            ls -lat
+                            python3.8 --version
+                            cat parameter.json > param.json
+                            python3.8 GetStorage.py
+                        """
+                    }
                 }
             }
         }
