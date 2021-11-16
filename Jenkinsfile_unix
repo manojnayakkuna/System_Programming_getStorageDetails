@@ -10,7 +10,7 @@ pipeline {
         stage('Clean Workspace') {
             steps {
                 cleanWs()
-            }
+            }Perform code check-out
         }*/
 
         stage('pipeline initialization') {
@@ -24,7 +24,7 @@ pipeline {
 
         stage('code checkout') {
             steps{
-                echo 'Perform code check-out"'
+                echo 'Perform code check-out'
             }
         }
 
@@ -35,12 +35,13 @@ pipeline {
                     sh """
                         echo 'Perform project execution run environment'
                         current workspace : $workspace
+                        python3.8 --version
                     """
 
                     dir(workspace) {
                         sh """
                             pwd
-                            python3.8 --version
+                            ls -lat
                             cat parameter.json > param.json
                             python3.8 GetStorage.py
                         """
