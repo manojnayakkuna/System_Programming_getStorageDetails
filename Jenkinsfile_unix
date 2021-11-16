@@ -15,10 +15,8 @@ pipeline {
 
         stage('pipeline initialization') {
             steps {
-                sh """
-                    echo 'This is pipeline initialization step'
-                    echo 'We will be performing code check-out, prepare run environment and execute the project'
-                """
+                echo 'This is pipeline initialization step'
+                echo 'We will be performing code check-out, prepare run environment and execute the project'
             }
         }
 
@@ -30,17 +28,15 @@ pipeline {
 
         stage('prepare environment and execute the module') {
             steps {
-                script {
-                    dir(workspace) {
-                        sh """
-                            echo 'Perform project execution run environment'                            
-                            current workspace : $workspace
-                            ls -lat
-                            python3.8 --version
-                            cat parameter.json > param.json
-                            python3.8 GetStorage.py
-                        """
-                    }
+                dir(workspace) {
+                    sh """
+                        echo 'Perform project execution run environment'                            
+                        current workspace : $workspace
+                        ls -lat
+                        python3.8 --version
+                        cat parameter.json > param.json
+                        python3.8 GetStorage.py
+                    """
                 }
             }
         }
