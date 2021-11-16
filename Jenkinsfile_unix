@@ -4,7 +4,7 @@ pipeline {
 
     agent any
 
-    stages {This is pipeline initialization step
+    stages {
 
         /*
         stage('Clean Workspace') {
