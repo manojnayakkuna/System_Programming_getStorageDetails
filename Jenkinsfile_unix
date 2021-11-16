@@ -16,7 +16,7 @@ pipeline {
         stage('create python docker container using python alpine linux') {
             agent {
                 docker {
-                    image 'python: 2-alpine'
+                    image 'python:2-alpine'
                 }
             }
 
