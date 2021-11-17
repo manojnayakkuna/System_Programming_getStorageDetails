@@ -1,0 +1,159 @@
+Started by user Manoj Kumar Nayak
+Obtained Jenkinsfile from git https://github.com/manojnayakkuna/System_Programming_getStorageDetails.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Apps\Git\bin\git.exe rev-parse --resolve-git-dir C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Apps\Git\bin\git.exe config remote.origin.url https://github.com/manojnayakkuna/System_Programming_getStorageDetails.git # timeout=10
+Fetching upstream changes from https://github.com/manojnayakkuna/System_Programming_getStorageDetails.git
+ > C:\Apps\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.21.0.windows.1'
+ > C:\Apps\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/manojnayakkuna/System_Programming_getStorageDetails.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Apps\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision f5b23d1119c39f97e1b41cb1c3561b4f0a327c2a (refs/remotes/origin/master)
+ > C:\Apps\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Apps\Git\bin\git.exe checkout -f f5b23d1119c39f97e1b41cb1c3561b4f0a327c2a # timeout=10
+Commit message: "committed more structured files"
+ > C:\Apps\Git\bin\git.exe rev-list --no-walk 0d78f00d13443514788c29de05750e182a9286c8 # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (pipeline initialization)
+[Pipeline] echo
+This is pipeline initialization step
+[Pipeline] echo
+We will be performing code check-out, prepare run environment and execute the project
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (code checkout)
+[Pipeline] echo
+Perform code check-out
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (prepare environment and execute the module)
+[Pipeline] script
+[Pipeline] {
+[Pipeline] echo
+Perform project execution run environment
+[Pipeline] echo
+current workspace : C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails
+[Pipeline] echo
+conda install path: C:\Users\manoj\Anaconda3\condabin
+[Pipeline] dir
+Running in C:\Users\manoj\Anaconda3\condabin
+[Pipeline] {
+[Pipeline] bat
+
+C:\Users\manoj\Anaconda3\condabin>dir
+ Volume in drive C is OS
+ Volume Serial Number is E4F2-4CAD
+
+ Directory of C:\Users\manoj\Anaconda3\condabin
+
+06/13/2019  01:14 AM    <DIR>          .
+06/13/2019  01:14 AM    <DIR>          ..
+04/04/2019  12:08 PM               147 activate.bat
+04/04/2019  12:08 PM             1,074 conda.bat
+04/04/2019  12:08 PM               530 conda_auto_activate.bat
+04/04/2019  12:08 PM               649 conda_hook.bat
+04/04/2019  12:08 PM               192 deactivate.bat
+04/04/2019  12:08 PM                65 rename_tmp.bat
+04/04/2019  12:08 PM             1,998 _conda_activate.bat
+               7 File(s)          4,655 bytes
+               2 Dir(s)  114,474,102,784 bytes free
+
+C:\Users\manoj\Anaconda3\condabin>conda env list 
+WARNING: The conda.compat module is deprecated and will be removed in a future release.
+WARNING: The conda.compat module is deprecated and will be removed in a future release.
+# conda environments:
+#
+base                  *  C:\Users\manoj\Anaconda3
+
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] dir
+Running in C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails
+[Pipeline] {
+[Pipeline] bat
+
+C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails>dir
+ Volume in drive C is OS
+ Volume Serial Number is E4F2-4CAD
+
+ Directory of C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails
+
+11/16/2021  06:56 PM    <DIR>          .
+11/16/2021  06:56 PM    <DIR>          ..
+11/15/2021  02:23 AM            38,561 .editorconfig
+11/16/2021  06:56 PM    <DIR>          .idea
+11/16/2021  06:56 PM    <DIR>          CaptureResults
+11/16/2021  06:56 PM    <DIR>          Design Flow
+11/16/2021  06:56 PM             1,159 ExtractDetails.py
+11/16/2021  06:56 PM               547 FileFormatter.py
+11/16/2021  06:56 PM             8,207 GetStorage.py
+11/16/2021  06:56 PM             2,480 Jenkinsfile
+11/16/2021  06:56 PM             1,807 Jenkinsfile_unix
+11/16/2021  06:56 PM    <DIR>          Miscellaneous
+11/16/2021  06:56 PM               279 param.json
+11/15/2021  02:23 AM               279 parameter.json
+11/16/2021  06:56 PM               693 ParameterFile.py
+11/15/2021  05:57 PM               154 parameter_unix.json
+11/16/2021  06:56 PM    <DIR>          PublishResults
+11/16/2021  06:56 PM               631 PublishResults.py
+11/15/2021  02:23 AM    <DIR>          Scripts
+11/16/2021  06:56 PM    <DIR>          TempStorage
+11/15/2021  02:23 AM             1,300 test_Validator.py
+11/15/2021  02:23 AM    <DIR>          UnitTestResults
+11/16/2021  06:56 PM               694 Validator.py
+11/16/2021  06:56 PM    <DIR>          __pycache__
+              13 File(s)         56,791 bytes
+              11 Dir(s)  114,474,496,000 bytes free
+
+C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails>SET PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\manoj\Desktop\_Apps\jdk-11.0.2\bin;C:\Users\manoj\Desktop\_Apps\mysql\bin;C:\Users\manoj\Desktop\_Apps\Notepad++;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Apps\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\manoj\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\manoj\AppData\Local\Programs\Python\Python37-32\; 
+
+C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails>type parameter.json  1>param.json 
+
+C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails>python GetStorage.py 
+self.parameterFileName: param.json
+value: Windows
+dataObject: ['Linux', 'Windows']
+value: json
+dataObject: ['json', 'xml', 'txt']
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // script
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Move the result file to a different space location)
+[Pipeline] dir
+Running in C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails
+[Pipeline] {
+[Pipeline] echo
+Execute project artifacts
+[Pipeline] bat
+
+C:\Jenkins_Projects\workspace\System_Programming_getStorageDetails>copy "PublishResults\diskSpaceInfo.json" /A "C:\Users\manoj\Downloads\Python Study\Coding Challenges\Interview Problem Statement\System_Programming_getStorageDetails\CaptureResults\Windows\diskSpaceInfo.json" /A /Y 
+        1 file(s) copied.
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
