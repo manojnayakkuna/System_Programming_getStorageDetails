@@ -20,7 +20,6 @@ class ExtractDetails:
                         fileName = record[4].replace('\n','')
                         fileSize = int(record[3].replace(',', ''))
                         results[tempKey].append(dict({fileName: fileSize}))
-
         return results
 
     def extractDetailsLinux(self, searchString, rawFilePath):
