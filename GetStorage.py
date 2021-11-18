@@ -102,12 +102,13 @@ class GetStorage:
         Trigger script to capture disk space
         '''
         currentPath = str(pathlib.Path(__file__).parent.resolve())
-        parameter1 = currentPath + "\\TempStorage\\rawFileOutput.txt"
         parameter2 = currentPath
         if self.osProxy == 'Linux':
-            subprocess.run(['/bin/bash', './Scripts/folderPathFileSizeInfo.sh rawFileOutput.txt'])
+            parameter1 = currentPath + "/TempStorage/rawFileOutput.txt"
+            subprocess.run(['/bin/bash', './Scripts/folderPathFileSizeInfo.bash'])
         elif self.osProxy == 'Windows':
             #This is used for asynchronous Process
+            parameter1 = currentPath + "\\TempStorage\\rawFileOutput.txt"
             scriptRunPath = currentPath + "\\Scripts\\folderPathFileSizeInfo.bat"
             p = subprocess.Popen([scriptRunPath, parameter1, parameter2], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             output, errors = p.communicate()
@@ -119,8 +120,8 @@ class GetStorage:
         Set the search string based on osProxy parameter
         '''
         if self.osProxy == 'Linux':
-            searchString = ''
-            self.commonFrameworkResults = self.extractDetails.extractDetailsLinux(searchString, self.rawFilePath)
+            currentPath = str(pathlib.Path(__file__).parent.resolve())
+            self.commonFrameworkResults = self.extractDetails.extractDetailsLinux(currentPath, self.rawFilePath)
         elif self.osProxy == 'Windows':
             searchString = 'Directory of'
             self.commonFrameworkResults = self.extractDetails.extractDetailsWindows(searchString, self.rawFilePath)
@@ -130,7 +131,10 @@ class GetStorage:
         Format the common framework file into user specifed file format, if provided none default is .txt
         '''
         currentPath = str(pathlib.Path(__file__).parent.resolve())
-        PublishFilePath = currentPath + "\\PublishResults\\" + self.resultsFileName
+        if self.osProxy == 'Windows':
+            PublishFilePath = currentPath + "\\PublishResults\\" + self.resultsFileName
+        else:
+            PublishFilePath = currentPath + "/PublishResults/" + self.resultsFileName
         if self.fileFormat.lower() == "json":
             self.resultsFileName = PublishFilePath + ".json"
             self.transferResults = self.fileFormatter.loadJsonFileFormat(self.commonFrameworkResults)

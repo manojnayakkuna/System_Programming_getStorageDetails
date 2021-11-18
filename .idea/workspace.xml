@@ -31,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,10 +45,23 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1637012429149">
+    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637211919952">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1637211919952" />
+    <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1637213455145">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1637213455145" />
     <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1637012429149" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1637179901036">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1637179901036" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1637212198166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1637212198166" />
     <state x="9" y="0" width="1009" height="715" key="dock-window-1" timestamp="1636957952926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -60,5 +74,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1637044105944" />
+    <state x="475" y="223" key="scopes" timestamp="1637212438346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="475" y="223" key="scopes/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1637212438346" />
   </component>
 </project>

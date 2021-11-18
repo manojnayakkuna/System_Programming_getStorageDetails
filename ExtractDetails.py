@@ -22,6 +22,21 @@ class ExtractDetails:
                         results[tempKey].append(dict({fileName: fileSize}))
         return results
 
-    def extractDetailsLinux(self, searchString, rawFilePath):
+    def extractDetailsLinux(self, currentPath, rawFilePath):
         # Read raw output file 'rawFileOutput.txt' to load into a common temporary variable for Linux
-        pass
+        results = defaultdict(list)
+        with open(rawFilePath) as file:
+            tempKey = ''
+            for line in file:
+                if line[0:2] == ".:":
+                    tempKey = currentPath
+                    results.get(tempKey,[])
+                elif line[0:2] == "./":
+                    tempKey = line[2:-2]
+                    results.get(tempKey,[])
+                elif line[0] == "-":
+                    record = [value for value in line.split(' ') if value != '']
+                    fileName = record[8].replace('\n','')
+                    fileSize = record[4].replace('\n','')
+                    results[tempKey].append(dict({fileName: fileSize}))
+        return results
