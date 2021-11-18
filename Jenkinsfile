@@ -48,7 +48,7 @@ pipeline {
                     dir(workspace) {
                         bat '''
                             dir
-                            SET PATH=%PATH%;%PYTHON_PATH%
+                            SET PATH=%PATH%;%PYTHONPATH%
                             type parameter.json > param.json
                             python GetStorage.py
                         '''
